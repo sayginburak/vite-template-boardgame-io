@@ -14,16 +14,21 @@ This is a template for creating multiplayer board games using [boardgame.io](htt
 
 ## Getting Started
 
-1. Clone this template
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
+You can create a new project based on this template using degit:
+
+```bash
+npx degit sayginburak/vite-template-boardgame-io my-game
+cd my-game
+npm install
+```
+
+Then:
+
+1. Start the development server:
    ```bash
    npm run dev
    ```
-4. Start the game server (in a separate terminal):
+2. Start the game server (in a separate terminal):
    ```bash
    npm run server
    ```
@@ -39,26 +44,12 @@ This is a template for creating multiplayer board games using [boardgame.io](htt
    - Click "Join Game"
 4. Play the game!
 
-## Project Structure
-
-```
-├── src/
-│   ├── game/
-│   │   └── Game.ts         # Game logic and state
-│   ├── components/
-│   │   └── Board.tsx      # Game board component
-│   ├── App.tsx            # Main application
-│   ├── main.tsx           # Entry point
-│   └── *.css             # Styles
-├── server.ts              # Game server
-└── package.json          # Dependencies and scripts
-```
 
 ## Customizing the Game
 
-1. Modify `src/game/Game.ts` to change game rules and logic
-2. Update `src/components/Board.tsx` to customize the game board
-3. Adjust styles in `src/App.css` and `src/index.css`
+1. Modify `src/game/SimpleGame.ts` to change game rules and logic
+2. Update `src/components/Game.tsx` to customize the game board
+3. Adjust styles in `src/App.css`
 
 ## Available Scripts
 
@@ -77,4 +68,4 @@ This is a template for creating multiplayer board games using [boardgame.io](htt
 
 ## License
 
-MIT 
+MIT
